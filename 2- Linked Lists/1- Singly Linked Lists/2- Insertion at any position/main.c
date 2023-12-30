@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
 	printf("5- Exit\n");
 	
 	while(1) {
-		printf("\nYour choice: ");
+		printf("\nYour choice(1-5): ");
 		scanf("%d", &choice);
 		switch(choice) {
 			case 1:
@@ -42,7 +42,7 @@ int main(int argc, char *argv[]) {
 				break;
 			case 4:
 				if(root == NULL) {
-					printf("Insert some nodes first!\n");
+					printf("List is empty!Insert some nodes first!\n");
 				} else {
 					printList(root);
 				}
