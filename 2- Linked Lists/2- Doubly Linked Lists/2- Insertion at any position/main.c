@@ -42,11 +42,7 @@ int main(int argc, char *argv[]) {
 				root = insertSpecific(root, &tail);
 				break;
 			case 4:
-				if(root == NULL) {
-					printf("List is empty! Insert some nodes first.\n");
-				} else {
-					printList(root);
-				}
+				printList(root);
 				break;
 			case 5:
 				printf("Bye!\n");
@@ -118,6 +114,7 @@ struct node *insertSpecific(struct node *root, struct node **tail) {
 	if(root == NULL) {
 		root = newNode;
 		*tail = root;
+		printf("%d inserted at the beginning of the doubly linked list.\n", newNode->data);
 	} else {
 		int position;
 		

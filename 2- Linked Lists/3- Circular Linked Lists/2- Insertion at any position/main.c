@@ -52,7 +52,7 @@ int main() {
 // Function to create a new node and return it to insertion
 struct node *createNewNode() {
 	struct node *newNode = (struct node *)malloc(sizeof(struct node));
-	if (newNode == NULL) {
+	if(newNode == NULL) {
 	    perror("Memory allocation failed");
 	    exit(EXIT_FAILURE);
 	}
