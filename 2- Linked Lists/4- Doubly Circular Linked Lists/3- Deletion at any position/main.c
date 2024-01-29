@@ -153,7 +153,7 @@ struct node *deleteSpecific(struct node *root, struct node **tail) {
 	}
 
 	// Check for invalid position
-	if(iter == root || iter->next == root) {
+	if(iter->next == root) {
 		printf("Invalid position!\n");
 		return root;
 	}
